@@ -40,7 +40,7 @@ public class Product{
 
         inventory.removeIf(isAffordable.negate());
 
-        System.out.println("Affordable Items:");
+        System.out.println("Affordable Items are:");
         inventory.forEach(System.out::println);
     }
 }
