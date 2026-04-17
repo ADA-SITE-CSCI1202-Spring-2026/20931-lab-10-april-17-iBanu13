@@ -25,7 +25,7 @@ public class Employee {
     public double getSalary(){
         return this.salary;
     } 
-    
+
     public static void main(String[] args) {
         List<Employee> employeeList = new ArrayList<>();
         employeeList.add(new Employee("Kayra", "Han", 1000.50));
@@ -34,7 +34,7 @@ public class Employee {
         employeeList.add(new Employee("Tabriz", "Ahmadli", 3000.46));
 
 
-        Function<Employee, String> formatCard = e -> "Name: [" + e.getLastName() + " " + e.getFirstName() + "]-Salary: $[" + e.getSalary() + "]";
+        Function<Employee, String> formatCard = e -> "Name: [" + e.getLastName() + " " + e.getFirstName() + "]-Salary:$[" + e.getSalary() + "]";
         Function<Employee, Double> salaryPicker = Employee::getSalary;
 
         for (Employee emp : employeeList) {
