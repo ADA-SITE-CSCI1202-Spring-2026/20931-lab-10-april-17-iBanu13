@@ -25,6 +25,7 @@ public class Employee {
     public double getSalary(){
         return this.salary;
     } 
+    
     public static void main(String[] args) {
         List<Employee> employeeList = new ArrayList<>();
         employeeList.add(new Employee("Kayra", "Han", 1000.50));
